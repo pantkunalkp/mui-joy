@@ -67,7 +67,7 @@ const IconButtonRoot = styled("button", {
         "--Icon-fontSize": "1.25rem", //1.5 control the SvgIcon font-size
         minWidth: "var(--IconButton-size, 2.5rem)",
         minHeight: "var(--IconButton-size, 2.5rem)",
-        fontSize: theme.vars.fontSize.sm, //md
+        fontSize: theme.vars.fontSize.sm, //theme.vars.fontSize.md
       }),
       ...(ownerState.size === "lg" && {
         "--Icon-fontSize": "1.5rem", //1.75
@@ -76,7 +76,7 @@ const IconButtonRoot = styled("button", {
         fontSize: theme.vars.fontSize.lg,
       }),
       "&.JoyIconButton-root.Joy-disabled": {
-        pointerEvents: "all",
+        pointerEvents: "none",
         cursor: "not-allowed !important",
       },
       padding: 0,

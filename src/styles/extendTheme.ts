@@ -360,9 +360,9 @@ export default function extendTheme(themeOptions?: CssVarsThemeOptions): Theme {
       xs: "0.6875rem", // 11px
       sm: "0.75rem", // 12px
       md: "0.875rem", // 14px
-      lg: "1rem", // 16px
-      xl: "1.25rem", // 20px
-      xl2: "1.5rem", // 24px
+      lg: "1rem", // 16px  //using this in SvgIcon
+      xl: "1.25rem", // 20px //using this in SvgIcon
+      xl2: "1.5rem", // 24px  //using this in SvgIcon
       xl3: "2rem", // 32px
 
       // xs: "0.75rem",
@@ -457,33 +457,36 @@ export default function extendTheme(themeOptions?: CssVarsThemeOptions): Theme {
      * lg: 0px 24px 40px rgba(26, 26, 26, 0.16)
      */
     shadow: {
-      sm: `${getCssVar("shadowRing")}, 0.3px 0.8px 1.1px rgba(${getCssVar(
-        "shadowChannel"
-      )} / 0.11), 0.5px 1.3px 1.8px -0.6px rgba(${getCssVar(
-        "shadowChannel"
-      )} / 0.18), 1.1px 2.7px 3.8px -1.2px rgba(${getCssVar(
-        "shadowChannel"
-      )} / 0.26)`,
-      md: `${getCssVar("shadowRing")}, 0.3px 0.8px 1.1px rgba(${getCssVar(
-        "shadowChannel"
-      )} / 0.12), 1.1px 2.8px 3.9px -0.4px rgba(${getCssVar(
-        "shadowChannel"
-      )} / 0.17), 2.4px 6.1px 8.6px -0.8px rgba(${getCssVar(
-        "shadowChannel"
-      )} / 0.23), 5.3px 13.3px 18.8px -1.2px rgba(${getCssVar(
-        "shadowChannel"
-      )} / 0.29)`,
-      lg: `${getCssVar("shadowRing")}, 0.3px 0.8px 1.1px rgba(${getCssVar(
-        "shadowChannel"
-      )} / 0.11), 1.8px 4.5px 6.4px -0.2px rgba(${getCssVar(
-        "shadowChannel"
-      )} / 0.13), 3.2px 7.9px 11.2px -0.4px rgba(${getCssVar(
-        "shadowChannel"
-      )} / 0.16), 4.8px 12px 17px -0.5px rgba(${getCssVar(
-        "shadowChannel"
-      )} / 0.19), 7px 17.5px 24.7px -0.7px rgba(${getCssVar(
-        "shadowChannel"
-      )} / 0.21)`,
+      sm: "0px 4px 8px rgba(26, 26, 26, 0.2)",
+      md: "0px 12px 32px rgba(26, 26, 26, 0.24)",
+      lg: "0px 24px 40px rgba(26, 26, 26, 0.16)",
+      // sm: `${getCssVar("shadowRing")}, 0.3px 0.8px 1.1px rgba(${getCssVar(
+      //   "shadowChannel"
+      // )} / 0.11), 0.5px 1.3px 1.8px -0.6px rgba(${getCssVar(
+      //   "shadowChannel"
+      // )} / 0.18), 1.1px 2.7px 3.8px -1.2px rgba(${getCssVar(
+      //   "shadowChannel"
+      // )} / 0.26)`,
+      // md: `${getCssVar("shadowRing")}, 0.3px 0.8px 1.1px rgba(${getCssVar(
+      //   "shadowChannel"
+      // )} / 0.12), 1.1px 2.8px 3.9px -0.4px rgba(${getCssVar(
+      //   "shadowChannel"
+      // )} / 0.17), 2.4px 6.1px 8.6px -0.8px rgba(${getCssVar(
+      //   "shadowChannel"
+      // )} / 0.23), 5.3px 13.3px 18.8px -1.2px rgba(${getCssVar(
+      //   "shadowChannel"
+      // )} / 0.29)`,
+      // lg: `${getCssVar("shadowRing")}, 0.3px 0.8px 1.1px rgba(${getCssVar(
+      //   "shadowChannel"
+      // )} / 0.11), 1.8px 4.5px 6.4px -0.2px rgba(${getCssVar(
+      //   "shadowChannel"
+      // )} / 0.13), 3.2px 7.9px 11.2px -0.4px rgba(${getCssVar(
+      //   "shadowChannel"
+      // )} / 0.16), 4.8px 12px 17px -0.5px rgba(${getCssVar(
+      //   "shadowChannel"
+      // )} / 0.19), 7px 17.5px 24.7px -0.7px rgba(${getCssVar(
+      //   "shadowChannel"
+      // )} / 0.21)`,
 
       // TODO: remove once all occurrence are removed form component
       xs: `${getCssVar("shadowRing")}, 0 1px 2px 0 rgba(${getCssVar(

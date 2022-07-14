@@ -64,7 +64,7 @@ const BadgeRoot = styled("span", {
     "--Badge-paddingX": "0.75rem", //0.5
     fontSize: theme.vars.fontSize.lg, //,md
   }),
-  "--Badge-ringSize": "2px",
+  "--Badge-ringSize": "0px", //2
   "--Badge-ring": `0 0 0 var(--Badge-ringSize) var(--Badge-ringColor, ${theme.vars.palette.background.body})`,
   position: "relative",
   display: "inline-flex",

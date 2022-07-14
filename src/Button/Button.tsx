@@ -138,6 +138,7 @@ const ButtonRoot = styled("button", {
     },
   ];
 });
+
 const Button = React.forwardRef(function Button(inProps, ref) {
   const props = useThemeProps<
     typeof inProps & { component?: React.ElementType }
